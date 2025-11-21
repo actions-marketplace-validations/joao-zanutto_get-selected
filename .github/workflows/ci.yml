@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.0
 
       - name: Setup Node.js
         id: setup-node
@@ -60,7 +60,7 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.0
 
       - name: Test Local Action
         id: get-selected-step
