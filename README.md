@@ -26,10 +26,10 @@ jobs:
   get-selected:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - id: get-selected-step
-        uses: joao-zanutto/get-selected@v1.1.1
+        uses: joao-zanutto/get-selected@v2.0.1
 
       - run: echo ${{ steps.get-selected-step.outputs.selected }}
 ```
@@ -53,10 +53,10 @@ jobs:
     outputs: # Set this to consume the output on other job
       selected: ${{ steps.get-selected-step.outputs.selected}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - id: get-selected-step
-        uses: joao-zanutto/get-selected@v1.1.1
+        uses: joao-zanutto/get-selected@v2.0.1
 
   consume-on-another-job:
     runs-on: ubuntu-latest
