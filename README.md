@@ -67,11 +67,11 @@ jobs:
 
 ## Inputs
 
-| Input       | Required | Default  | Description                             |
-| ----------- | -------- | -------- | --------------------------------------- |
-| `ignore`    | `false`  | `null`   | Comma-separated options to ignore       |
-| `format`    | `false`  | `'list'` | Output format. `list` or `json`         |
-| `separator` | `false`  | `' '`    | Separator; only vaid for `format: list` |
+| Input       | Required | Default  | Description                              |
+| ----------- | -------- | -------- | ---------------------------------------- |
+| `ignore`    | `false`  | `null`   | Comma-separated options to ignore        |
+| `format`    | `false`  | `'list'` | Output format. `list` or `json`          |
+| `separator` | `false`  | `' '`    | Separator; only valid for `format: list` |
 
 ## Outputs
 
