@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - id: get-selected-step
-        uses: joao-zanutto/get-selected@v2.0.1
+        uses: joao-zanutto/get-selected@v2.0.0
 
       - run: echo ${{ steps.get-selected-step.outputs.selected }}
 ```
@@ -56,7 +56,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - id: get-selected-step
-        uses: joao-zanutto/get-selected@v2.0.1
+        uses: joao-zanutto/get-selected@v2.0.0
 
   consume-on-another-job:
     runs-on: ubuntu-latest
