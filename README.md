@@ -26,10 +26,10 @@ jobs:
   get-selected:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - id: get-selected-step
-        uses: joao-zanutto/get-selected@v1.1.1
+        uses: joao-zanutto/get-selected@v2.0.0
 
       - run: echo ${{ steps.get-selected-step.outputs.selected }}
 ```
@@ -53,10 +53,10 @@ jobs:
     outputs: # Set this to consume the output on other job
       selected: ${{ steps.get-selected-step.outputs.selected}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - id: get-selected-step
-        uses: joao-zanutto/get-selected@v1.1.1
+        uses: joao-zanutto/get-selected@v2.0.0
 
   consume-on-another-job:
     runs-on: ubuntu-latest
@@ -67,11 +67,11 @@ jobs:
 
 ## Inputs
 
-| Input       | Required | Default  | Description                             |
-| ----------- | -------- | -------- | --------------------------------------- |
-| `ignore`    | `false`  | `null`   | Comma-separated options to ignore       |
-| `format`    | `false`  | `'list'` | Output format. `list` or `json`         |
-| `separator` | `false`  | `' '`    | Separator; only vaid for `format: list` |
+| Input       | Required | Default  | Description                              |
+| ----------- | -------- | -------- | ---------------------------------------- |
+| `ignore`    | `false`  | `null`   | Comma-separated options to ignore        |
+| `format`    | `false`  | `'list'` | Output format. `list` or `json`          |
+| `separator` | `false`  | `' '`    | Separator; only valid for `format: list` |
 
 ## Outputs
 
